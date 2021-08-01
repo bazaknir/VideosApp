@@ -39,7 +39,7 @@ app.get("/", function (req, res) {
 });
 
 app.use(express.static(clietPath));
-let downloadsPath = path.join(__dirname, '..//downloads')
+let downloadsPath = path.join(config.DOWNLOAD_PATH)
 let imagesPath = path.join(__dirname, '..//images')
 app.use('/downloads', express.static(downloadsPath));
 app.use('/images', express.static(imagesPath));
