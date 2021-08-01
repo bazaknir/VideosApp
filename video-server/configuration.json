@@ -1,0 +1,9 @@
+{
+    "PORT": 3000,
+    "API_KEY": "563492ad6f917000010000014145d16e1c094b0c997bd90dafec4cfb",
+    "DOWNLOAD_PATH": "C:\\Web\\VideoApp\\video-server\\downloads",
+    "CACHE_FILE_PATH": "C:\\Web\\VideoApp\\video-server",
+    "MOVIES_PER_PAGE": 80,
+    "SECONDS_TO_KEEP_VIDEOS": 600,
+    "VIDEO_AMOUNT_TO_CLIENT": 200
+}

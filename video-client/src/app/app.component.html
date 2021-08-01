@@ -1,0 +1,30 @@
+<div class="header">
+  <h1>Truffle amazing videos!</h1>
+  <p>click the truffle image to get new videos!</p>
+  <div class="images">
+    <img src="http://localhost:3000/images/Truffles.jpg" alt="image" width="80" height="80" (click)="getNewVideos()" style="cursor: pointer;">
+    <ng-container *ngIf="loading">
+      <img src="assets/Spinner.gif" style="width: 40px; height: 40px; margin-left: 5px;" />
+    </ng-container>
+    <ng-container *ngIf="errorMessage">
+      <p>{{errorMessage}}</p>
+    </ng-container>
+  </div>
+
+</div>
+
+<hr>
+
+<div id="main-container" class="container">
+  <!-- <cdk-virtual-scroll-viewport itemSize="404" style="height: 808px"> 
+    <div *cdkVirtualFor="let video of mockVidosData">
+      <app-video-player #cmp [src]="video.src" [id]="video.id" [isScrolling]="isScrolling" (onHover)="onHover($event)">
+      </app-video-player>
+    </div> -->
+
+  <div *ngFor="let video of renderedVideos">
+    <app-video-player #cmp [src]="video.src" [id]="video.id" [isScrolling]="isScrolling" (onHover)="onHover($event)">
+    </app-video-player>
+
+  <!-- </cdk-virtual-scroll-viewport> -->
+</div>
