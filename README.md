@@ -6,8 +6,7 @@ App to discover videos
   * within the client, run the command "npm install" - this will install required npm packages
   * within the client, run the command "npm run build" - this will build the client.
   * within the server, run the command "npm install" - this will install required npm packages
-  * within the server, run the command "npm run build" - this will build the server.
-  * within the server, run the command "npm start" - this will run the server and the client.
+  * within the server, run the command "npm start" - this will build run the server and the client.
   
   * Important note - please set the video_client and video_server on the same level in your hard-drive
   eg:
